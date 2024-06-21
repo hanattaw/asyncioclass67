@@ -9,7 +9,7 @@ def thread_function (name):
     logging.info("Thread %s: finishing", name)
 
 if __name__ == "__main__":
-    format = "%(asvtime)s: %(message)s"
+    format = "%(asctime)s: %(message)s"
     logging.basicConfig(format=format, level=logging.INFO,
                         datefmt="%H:%M:%S")
 
