@@ -1,5 +1,4 @@
 # Basic Synchronization Using Lock
-# Basic Synchrontzation Using Lock
 import concurrent.futures
 import logging
 import threading
