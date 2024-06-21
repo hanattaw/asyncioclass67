@@ -20,6 +20,7 @@ if __name__ == "__main__":
         threads.append(x)
         x.start()
 
+
     for index, thread in enumerate(threads):
         logging.info("Main  : Before joining thread %d.", index)
         thread.join()
