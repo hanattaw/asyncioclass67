@@ -18,7 +18,13 @@ async def fry_eggs(): # 1
 
 async def main():
     start = time()
-    await asyncio.gather(make_coffee(), fry_eggs())
+    # await asyncio.gather(make_coffee(), fry_eggs())
+    coffee_task = asyncio.create_task(make_coffee())
+    eggs_task = asyncio.create_task(fry_eggs())
+
+    # wait for completetion, both tasks are schedul for excution
+    await coffee_task
+    await eggs_task
     print(f"breakfast is ready in {time()-start} seconds")
 
 asyncio.run(main()) 
