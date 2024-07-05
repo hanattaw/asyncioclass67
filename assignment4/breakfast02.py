@@ -13,7 +13,7 @@ async def fry_eggs(): # 1
     print("eggs: prepare ingridients")
     sleep(1)
     print("eggs: frying...")
-    await asyncio.sleep(5) # 2 : pause, another tasks can be run
+    await asyncio.sleep(3) # 2 : pause, another tasks can be run
     print("eggs: ready")
 
 async def main():
