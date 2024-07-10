@@ -2,8 +2,8 @@
 from time import sleep, time
 
 def make_coffee():
-    print("coffee: prepare ingridients")
-    sleep(1)
+    print("coffee: prepare ingridients")    
+    sleep(1)    
     print("coffee: waiting...")
     sleep(5)
     print("coffee: ready")
