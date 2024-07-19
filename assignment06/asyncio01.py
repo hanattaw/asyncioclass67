@@ -21,6 +21,7 @@ class AsyncDatabaseConnection:
         await asyncio.sleep(1)  # Simulate an async data fetch
         return {"data": "sample data"}
 
+
 async def main():
     async with AsyncDatabaseConnection("test_db") as db:
         data = await db.fetch_data()

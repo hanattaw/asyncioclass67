@@ -23,6 +23,7 @@ class AsyncIterator():
         # return the counter value
         return self.counter
 
+
 # main coroutine
 async def main():
     # loop over async iterator with async for loop
