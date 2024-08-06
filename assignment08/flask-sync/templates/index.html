@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}"
 </head>
 <body>
-    <div id="header-container" class="ui inverted segment">
-        <div class="ui inverted secondary menu">
-           <h1 id="header-text">Pokemon Flask Synchronous Version</h1>
-           <h4>Get {{pokemons|length}} pokemons. Time taken: {{ end_time-start_time }} seconds</h4>
-        </div>
-        
+    <div class="ui inverted segment">
+        <h1 class="ui yellow header">Pokemon Flask Synchronous Version</h1>
+        <h4 class="ui grey header">|<a href="http://127.0.0.1:50000">Pokemon Flask Synchronous</a> | <a href="http://127.0.0.1:50001">Pokemon Flask Asynchronous</a> |<a href="http://127.0.0.1:50002">Pokemon Quart Asynchronous</a> | </h4>
+        <h5 class="ui grey header">Get {{pokemons|length}} pokemons. Time taken: {{ end_time-start_time }} seconds</h5>
     </div>
     <div id="container">
         <div id="poke-container" class="ui cards">
