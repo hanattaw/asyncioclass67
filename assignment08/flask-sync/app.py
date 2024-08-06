@@ -36,4 +36,4 @@ def index():
     return render_template('index.html', pokemons=pokemons, end_time=end_time, start_time=start_time)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=50001)
+    app.run(debug=True, port=50000)
