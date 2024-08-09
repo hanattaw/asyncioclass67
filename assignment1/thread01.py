@@ -1,4 +1,5 @@
 # running a function in another thread
+
 from time import sleep, ctime
 from threading import Thread
 
@@ -16,3 +17,4 @@ thread.start()
 # wait for the thread to finish
 print(f'{ctime()} Waiting for the thread...')
 thread.join()
+
